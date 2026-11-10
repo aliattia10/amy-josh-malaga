@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amy &amp; Josh in Málaga</title>
+<meta name="description" content="A romantic little guide to Málaga for Amy & Josh: where to eat, what to taste, and where to watch the sunset.">
+<meta property="og:title" content="Amy & Josh in Málaga"><meta property="og:image" content="img/hero3.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3b2228;--rose:#c2546b;--coral:#e8775a;--gold:#e9a84c;--cream:#fff7ef;--blush:#fbe6e0;--plum:#5a2a43}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Lato,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.6}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+a{color:var(--rose)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;animation:zoom 20s ease-out forwards}
+@keyframes zoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(60,20,45,.35),rgba(90,30,50,.15) 40%,rgba(59,34,40,.75))}
+.hero .in{position:relative;z-index:1;padding:2rem 1.2rem}
+.script{font-family:"Great Vibes",cursive;font-weight:400;color:var(--gold)}
+.hero .script{text-shadow:0 2px 12px rgba(0,0,0,.5);font-size:clamp(1.6rem,5vw,2.4rem);display:block;margin-bottom:.4rem}
+.hero h1{font-size:clamp(3rem,11vw,6.5rem);font-weight:500;text-shadow:0 4px 30px rgba(0,0,0,.4)}
+.hero h1 em{font-family:"Great Vibes",cursive;font-style:normal;color:#ffd9c2;font-weight:400;padding:0 .1em}
+.hero p{font-size:clamp(1rem,2.6vw,1.25rem);max-width:34rem;margin:1rem auto 2rem;opacity:.95}
+nav.jump{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
+nav.jump a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.7);padding:.55rem 1.1rem;border-radius:999px;font-size:.9rem;letter-spacing:.05em;backdrop-filter:blur(4px);background:rgba(255,255,255,.08)}
+nav.jump a:hover{background:rgba(255,255,255,.25)}
+.credit-hero{position:absolute;bottom:.5rem;right:.8rem;z-index:1;font-size:.7rem;opacity:.7}
+section{padding:5rem 1.2rem;max-width:1180px;margin:0 auto}
+.head{text-align:center;margin-bottom:3rem}
+.head .script{font-size:2rem;color:var(--coral)}
+.head h2{font-size:clamp(2.2rem,6vw,3.4rem);color:var(--plum)}
+.head p{max-width:38rem;margin:.8rem auto 0}
+.divider{text-align:center;color:var(--rose);letter-spacing:1rem;font-size:1.1rem;margin:0}
+figure{margin:0;position:relative}
+figcaption{font-size:.72rem;color:#8a6a6f;padding:.4rem .2rem 0;font-style:italic}
+.grid{display:grid;gap:1.6rem;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 10px 35px rgba(194,84,107,.12);display:flex;flex-direction:column;transition:transform .3s}
+.card:hover{transform:translateY(-4px)}
+.card figure img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card figcaption{padding:.4rem 1.2rem 0}
+.card .body{padding:.8rem 1.3rem 1.4rem;display:flex;flex-direction:column;flex:1}
+.num{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:1.1rem;font-style:italic}
+.card h3{font-size:1.75rem;color:var(--plum)}
+.hood{margin:.1rem 0 .7rem;color:var(--coral);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;font-weight:400}
+.card p{margin:.2rem 0}.card b{font-weight:700;color:var(--rose)}
+.note{font-size:.92rem;color:#6d4f55;background:var(--blush);border-radius:12px;padding:.6rem .8rem;margin-top:.7rem!important}
+.btn{margin-top:auto;align-self:flex-start;display:inline-block;margin-top:1rem;padding:.55rem 1.3rem;border-radius:999px;background:linear-gradient(135deg,var(--coral),var(--rose));color:#fff;text-decoration:none;font-weight:400;letter-spacing:.04em}
+.tint{background:linear-gradient(180deg,var(--cream),var(--blush) 30%,var(--blush) 70%,var(--cream));max-width:none}
+.tint>.wrap{max-width:1180px;margin:0 auto}
+.dishes{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.dish{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 25px rgba(90,42,67,.08)}
+.dish img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.dish div{padding:1rem 1.2rem 1.3rem}.dish h3{font-size:1.5rem;color:var(--plum)}.dish p{margin:.3rem 0 0;font-size:.95rem}
+.moment{display:grid;gap:1.5rem;align-items:center;margin-bottom:3.5rem}
+.moment img{border-radius:26px;aspect-ratio:3/2;object-fit:cover;width:100%;box-shadow:0 18px 40px rgba(90,42,67,.18)}
+.moment h3{font-size:2.1rem;color:var(--plum)}.heart{color:var(--rose);font-size:1.4rem}
+@media(min-width:800px){.moment{grid-template-columns:1.2fr 1fr;gap:3rem}.moment.rev figure{order:2}}
+.dusk{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.dusk img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dusk::after{content:"";position:absolute;inset:0;background:rgba(90,42,67,.35)}
+.dusk div{position:relative;z-index:1;padding:2rem}
+.dusk .script{font-size:clamp(2.6rem,9vw,4.5rem);color:#fff;text-shadow:0 3px 20px rgba(0,0,0,.35)}
+footer{background:var(--plum);color:#f3dfe3;padding:3rem 1.2rem;font-size:.8rem}
+footer .wrap{max-width:1180px;margin:0 auto}footer h2{font-size:1.5rem;color:#fff;margin-bottom:.8rem}
+footer a{color:#ffc9b5}footer ul{padding-left:1.1rem;columns:2 340px;column-gap:2rem}footer li{margin-bottom:.35rem;break-inside:avoid}
+.fade{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.fade.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.fade{opacity:1;transform:none}.hero img{animation:none}}
+</style></head><body>
+<header class="hero">
+ <img src="img/hero3.jpg" alt="Sunset over the rooftops of Málaga" fetchpriority="high">
+ <div class="in">
+  <span class="script">a little love letter to the Costa del Sol</span>
+  <h1>Amy <em>&amp;</em> Josh<br>in Málaga</h1>
+  <p>Sweet wine from the barrel, sardines on the embers, and golden sunsets over the sea — your guide to the most delicious, romantic corners of the city.</p>
+  <nav class="jump"><a href="#eat">Where to eat</a><a href="#taste">What to taste</a><a href="#moments">Romantic moments</a></nav>
+ </div>
+ <span class="credit-hero">Photo: Danielmlg86, CC BY-SA 3.0 es</span>
+</header>
+
+<section id="eat">
+ <div class="head fade"><span class="script">tables for two</span><h2>Where to eat &amp; drink</h2><p>Ten traditional, casual places loved by locals — old bodegas, tapas bars, fried-fish counters and beach chiringuitos.</p></div>
+ <div class="grid">
+<article class="card">
+ <figure><img src="img/pimpi2.jpg" alt="The entrance to Bodega Bar El Pimpi" loading="lazy"><figcaption>The entrance to Bodega Bar El Pimpi</figcaption></figure>
+ <div class="body"><span class="num">01</span><h3>El Pimpi</h3><p class="hood">Centro · by the Roman Theatre</p>
+ <p><b>Order:</b> Sweet Málaga wine, boquerones en vinagre, jamón</p><p class="note">About €18 a head for tapas. It gets busy, so book for a courtyard table.</p>
+ <a class="btn" href="https://www.elpimpi.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/guardia2.jpg" alt="The barrels at Antigua Casa de Guardia" loading="lazy"><figcaption>The barrels at Antigua Casa de Guardia</figcaption></figure>
+ <div class="body"><span class="num">02</span><h3>Antigua Casa de Guardia</h3><p class="hood">Alameda Principal</p>
+ <p><b>Order:</b> Málaga wine poured straight from the barrel</p><p class="note">Standing room only, and your tab is chalked on the counter. Sundays 11:00–15:00 only.</p>
+ <a class="btn" href="https://antiguacasadeguardia.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/calle-granada.jpg" alt="Evening on Calle Granada (the street, not Casa Lola itself)" loading="lazy"><figcaption>Evening on Calle Granada (the street, not Casa Lola itself)</figcaption></figure>
+ <div class="body"><span class="num">03</span><h3>Casa Lola</h3><p class="hood">Calle Granada 46</p>
+ <p><b>Order:</b> Porra antequerana, boquerones en vinagre, montaditos</p><p class="note">Open daily, but expect a queue at peak times.</p>
+ <a class="btn" href="https://grupocasalola.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/logueno.jpg" alt="Broad beans and ham with Málaga wine at Lo Güeno" loading="lazy"><figcaption>Broad beans and ham with Málaga wine at Lo Güeno</figcaption></figure>
+ <div class="body"><span class="num">04</span><h3>Lo Güeno</h3><p class="hood">Centro · near Calle Larios</p>
+ <p><b>Order:</b> Porra with ibérico ham and egg, gazpachuelo</p><p class="note">A taberna since 1967. The bar is narrow, so go early.</p>
+ <a class="btn" href="https://logueno.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/gilda.jpg" alt="Gildas, the classic vermouth companion (photo taken elsewhere in Spain)" loading="lazy"><figcaption>Gildas, the classic vermouth companion (photo taken elsewhere in Spain)</figcaption></figure>
+ <div class="body"><span class="num">05</span><h3>La Tranca</h3><p class="hood">Calle Carretería</p>
+ <p><b>Order:</b> Barrel vermouth, gildas, montadito de pata</p><p class="note">Usually with copla music playing. No bookings, so expect a wait.</p>
+ <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=La+Tranca+Calle+Carreteria+92+Malaga" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/atarazanas.jpg" alt="Mercado Central de Atarazanas, home of El Yerno" loading="lazy"><figcaption>Mercado Central de Atarazanas, home of El Yerno</figcaption></figure>
+ <div class="body"><span class="num">06</span><h3>Marisquería El Yerno</h3><p class="hood">Inside Mercado de Atarazanas</p>
+ <p><b>Order:</b> Fried boquerones, from about €10</p><p class="note">Mostly standing. Mon–Sat 11:00–17:00.</p>
+ <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Marisqueria+El+Yerno+Mercado+de+Atarazanas+Malaga" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/tintero.jpg" alt="The El Tintero sign in El Palo" loading="lazy"><figcaption>The El Tintero sign in El Palo</figcaption></figure>
+ <div class="body"><span class="num">07</span><h3>El Tintero</h3><p class="hood">El Palo</p>
+ <p><b>Order:</b> Espetos and pescaíto frito</p><p class="note">Waiters walk around calling out dishes; raise a hand for what you want. Open daily, no daytime bookings.</p>
+ <a class="btn" href="https://eltinteromalaga.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/espetos.jpg" alt="Espetos de sardinas on the embers (not taken at Las Palmeras)" loading="lazy"><figcaption>Espetos de sardinas on the embers (not taken at Las Palmeras)</figcaption></figure>
+ <div class="body"><span class="num">08</span><h3>Las Palmeras</h3><p class="hood">Pedregalejo</p>
+ <p><b>Order:</b> Espetos and their well-known fish soup</p><p class="note">A family chiringuito since 1980. Closed Mondays, lunch only for now.</p>
+ <a class="btn" href="https://www.laspalmerasrestaurante.es/" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/campero.jpg" alt="A Málaga campero (photo from another bar, not Mafalda)" loading="lazy"><figcaption>A Málaga campero (photo from another bar, not Mafalda)</figcaption></figure>
+ <div class="body"><span class="num">09</span><h3>Mafalda</h3><p class="hood">Pedregalejo</p>
+ <p><b>Order:</b> A proper Málaga campero, especially the Mafaldón</p><p class="note">Closed Tuesdays; evenings from 18:30.</p>
+ <a class="btn" href="https://mafaldapedregalejo.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+</article>
+<article class="card">
+ <figure><img src="img/aranda2.jpg" alt="Churros, chocolate and café con leche at Casa Aranda" loading="lazy"><figcaption>Churros, chocolate and café con leche at Casa Aranda</figcaption></figure>
+ <div class="body"><span class="num">10</span><h3>Casa Aranda</h3><p class="hood">Centro · Calle Herrería del Rey</p>
+ <p><b>Order:</b> Churros and hot chocolate</p><p class="note">Making churros since 1932, about €10 a head. Closes mid-afternoon, reopens around 16:30.</p>
+ <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Casa+Aranda+Calle+Herreria+del+Rey+3+Malaga" target="_blank" rel="noopener">Visit ↗</a></div>
+</article></div>
+</section>
+
+<section id="taste" class="tint"><div class="wrap">
+ <div class="head fade"><span class="script">a taste of the south</span><h2>Málaga dishes to try</h2><p>Share a plate of each — that's the malagueño way.</p></div>
+ <div class="dishes"><article class="dish"><img src="img/ajoblanco.jpg" alt="Ajoblanco" loading="lazy"><div><h3>Ajoblanco</h3><p>A chilled almond and garlic soup, often served with grapes — the white cousin of gazpacho.</p></div></article><article class="dish"><img src="img/porra.jpg" alt="Porra antequerana" loading="lazy"><div><h3>Porra antequerana</h3><p>A thick, cold tomato and bread cream from Antequera, topped with egg and ham.</p></div></article><article class="dish"><img src="img/boquerones.jpg" alt="Boquerones" loading="lazy"><div><h3>Boquerones</h3><p>Anchovies, the city&#x27;s emblem — marinated en vinagre or fried. Malagueños are even nicknamed boquerones.</p></div></article><article class="dish"><img src="img/pescaito2.jpg" alt="Pescaíto frito" loading="lazy"><div><h3>Pescaíto frito</h3><p>A mixed plate of small fish, dusted in flour and fried crisp. Best with a squeeze of lemon.</p></div></article><article class="dish"><img src="img/espeto-malagueta.jpg" alt="Espetos de sardinas" loading="lazy"><div><h3>Espetos de sardinas</h3><p>Sardines skewered on a cane and grilled over embers in sand-filled boats on the beach.</p></div></article><article class="dish"><img src="img/gazpachuelo.jpg" alt="Gazpachuelo malagueño" loading="lazy"><div><h3>Gazpachuelo malagueño</h3><p>A warm, comforting fish soup made silky with a garlic-mayonnaise emulsion and potato.</p></div></article><article class="dish"><img src="img/ensalada.jpg" alt="Ensalada malagueña" loading="lazy"><div><h3>Ensalada malagueña</h3><p>Potato, salt cod, orange and olives — sweet, salty and very local.</p></div></article><article class="dish"><img src="img/campero.jpg" alt="Campero" loading="lazy"><div><h3>Campero</h3><p>Málaga&#x27;s beloved oversized toasted sandwich, piled with ham, cheese, lettuce, tomato and mayo.</p></div></article></div>
+</div></section>
+
+<section id="moments">
+ <div class="head fade"><span class="script">just the two of you</span><h2>Romantic moments</h2></div>
+ <article class="moment "><figure><img src="img/gibralfaro2.jpg" alt="View over Málaga and the port from Gibralfaro" loading="lazy"><figcaption>View over Málaga and the port from Gibralfaro</figcaption></figure><div><span class="heart">♥</span><h3>Sunset from Gibralfaro</h3><p>Climb up to the Mirador de Gibralfaro, next to the castle, in the late afternoon. The whole city, the port and the bullring spread out below as the sky turns gold.</p></div></article><article class="moment rev"><figure><img src="img/muelle.jpg" alt="The Paseo del Muelle Uno in Málaga&#x27;s port" loading="lazy"><figcaption>The Paseo del Muelle Uno in Málaga&#x27;s port</figcaption></figure><div><span class="heart">♥</span><h3>A stroll along Muelle Uno</h3><p>Walk the palm-lined, pergola-shaded promenade of the port as the boats come in, then carry on to the Malagueta beach.</p></div></article><article class="moment "><figure><img src="img/malagueta.jpg" alt="Playa de la Malagueta" loading="lazy"><figcaption>Playa de la Malagueta</figcaption></figure><div><span class="heart">♥</span><h3>Toes in the sand at La Malagueta</h3><p>The city beach is just minutes from the centre — perfect for a quiet walk side by side as the light softens.</p></div></article><article class="moment rev"><figure><img src="img/pedregalejo.jpg" alt="Pedregalejo beach" loading="lazy"><figcaption>Pedregalejo beach</figcaption></figure><div><span class="heart">♥</span><h3>An evening in Pedregalejo</h3><p>Head east to the old fishermen&#x27;s quarter for a seafront walk, the smell of espetos on the grill, and dinner by the sea.</p></div></article>
+</section>
+
+<div class="dusk"><img src="img/hero.jpg" alt="Pink dusk over Málaga's coastline" loading="lazy"><div><span class="script">¡Que lo disfrutéis!</span><p>Enjoy every moment together.</p></div></div>
+
+<footer><div class="wrap">
+ <h2>Photo credits</h2>
+ <p>All photos are from Wikimedia Commons and are used under their free licences. Captions note where a photo shows the area or a dish rather than the venue itself.</p>
+ <ul><li><a href="https://commons.wikimedia.org/wiki/File:El_Pimpi_M%C3%A1laga_3.jpg" target="_blank" rel="noopener">El Pimpi Málaga 3.jpg</a> — andynash, <a href=https://creativecommons.org/licenses/by-sa/2.0>CC BY-SA 2.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Barriles_Antigua_Casa_de_Guardia.jpg" target="_blank" rel="noopener">Barriles Antigua Casa de Guardia.jpg</a> — Té y kriptonita, <a href=https://creativecommons.org/licenses/by-sa/3.0>CC BY-SA 3.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Calle_de_Granada_22_(Malaga).jpg" target="_blank" rel="noopener">Calle de Granada 22 (Malaga).jpg</a> — Thomas Dahlstrøm Nielsen, <a href=https://creativecommons.org/licenses/by/4.0>CC BY 4.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Broad_beans_and_ham_with_Malaga_wine,_Bar_Lo_Gueno,_Malaga.jpg" target="_blank" rel="noopener">Broad beans and ham with Malaga wine, Bar Lo Gueno, Malaga.jpg</a> — Jun, <a href=https://creativecommons.org/licenses/by-sa/2.0>CC BY-SA 2.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Gildas_en_Donostia.jpg" target="_blank" rel="noopener">Gildas en Donostia.jpg</a> — Biskuit from Atlanta, GA, <a href=https://creativecommons.org/licenses/by-sa/2.0>CC BY-SA 2.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:M%C3%A1laga_-_Mercado_Central_de_Atarazanas_2019-10-22.jpg" target="_blank" rel="noopener">Málaga - Mercado Central de Atarazanas 2019-10-22.jpg</a> — Rafa Esteve, <a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:ElTintero-M%C3%A1laga.jpg" target="_blank" rel="noopener">ElTintero-Málaga.jpg</a> — Tamorlan, <a href=https://creativecommons.org/licenses/by-sa/3.0>CC BY-SA 3.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Espetos_de_sardinas_(1435081938).jpg" target="_blank" rel="noopener">Espetos de sardinas (1435081938).jpg</a> — Daniel Sancho from Málaga, Spain, <a href=https://creativecommons.org/licenses/by/2.0>CC BY 2.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Campero_Malague%C3%B1o_-_La_Reola.jpg" target="_blank" rel="noopener">Campero Malagueño - La Reola.jpg</a> — Haydn Blackey from Cardiff, Wales, <a href=https://creativecommons.org/licenses/by-sa/2.0>CC BY-SA 2.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Caf%C3%A9_con_leche,_churros_y_chocolate,_Casa_Aranda,_Malaga.jpg" target="_blank" rel="noopener">Café con leche, churros y chocolate, Casa Aranda, Malaga.jpg</a> — Jun, <a href=https://creativecommons.org/licenses/by-sa/2.0>CC BY-SA 2.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Ajo_blanco.jpg" target="_blank" rel="noopener">Ajo blanco.jpg</a> — Popo le Chien, <a href=http://creativecommons.org/publicdomain/zero/1.0/deed.en>CC0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Porra_antequerana.jpg" target="_blank" rel="noopener">Porra antequerana.jpg</a> — Herrero Uceda, <a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Boquerones_en_vinagre.jpg" target="_blank" rel="noopener">Boquerones en vinagre.jpg</a> — Kent Wang, <a href=https://creativecommons.org/licenses/by-sa/2.0>CC BY-SA 2.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Pesca%C3%ADto_frito._chiclana.jpg" target="_blank" rel="noopener">Pescaíto frito. chiclana.jpg</a> — Xemenendura, <a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Pescado_al_espeto,_playa_de_la_Malagueta,_M%C3%A1laga,_Espa%C3%B1a,_2023-05-20,_DD_68.jpg" target="_blank" rel="noopener">Pescado al espeto, playa de la Malagueta, Málaga, España, 2023-05-20, DD 68.jpg</a> — Diego Delso, <a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Gazpachuelo_-_M%C3%A1laga.JPG" target="_blank" rel="noopener">Gazpachuelo - Málaga.JPG</a> — Tamorlan, <a href=https://creativecommons.org/licenses/by-sa/3.0>CC BY-SA 3.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Ensalada_malague%C3%B1a.jpg" target="_blank" rel="noopener">Ensalada malagueña.jpg</a> — Javier Vte Rejas, <a href=https://creativecommons.org/licenses/by/2.0>CC BY 2.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:View_of_Malaga_from_Castillo_Gibralfaro._Spain.jpg" target="_blank" rel="noopener">View of Malaga from Castillo Gibralfaro. Spain.jpg</a> — Ввласенко, <a href=https://creativecommons.org/licenses/by-sa/3.0>CC BY-SA 3.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:M%C3%A1laga_-_Paseo_del_Muelle_Uno_1.jpg" target="_blank" rel="noopener">Málaga - Paseo del Muelle Uno 1.jpg</a> — Zarateman, <a href=http://creativecommons.org/publicdomain/zero/1.0/deed.en>CC0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Playa_de_la_Malagueta,_M%C3%A1laga,_Espa%C3%B1a,_2023-05-20,_DD_69.jpg" target="_blank" rel="noopener">Playa de la Malagueta, Málaga, España, 2023-05-20, DD 69.jpg</a> — Diego Delso, <a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Pedregalejo_beach_(2026).jpg" target="_blank" rel="noopener">Pedregalejo beach (2026).jpg</a> — Pudelek, <a href=https://creativecommons.org/licenses/by-sa/4.0>CC BY-SA 4.0</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Vistas_de_malaga_atardecer.JPG" target="_blank" rel="noopener">Vistas de malaga atardecer.JPG</a> — Danielmlg86, <a href=https://creativecommons.org/licenses/by-sa/3.0/es/deed.en>CC BY-SA 3.0 es</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Atardecer_malaga.JPG" target="_blank" rel="noopener">Atardecer malaga.JPG</a> — Danielmlg86, <a href=https://creativecommons.org/licenses/by-sa/3.0/es/deed.en>CC BY-SA 3.0 es</a></li></ul>
+ <p>Made with ♥ for Amy &amp; Josh. Opening hours change — check each place's site before you go.</p>
+</div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.card,.dish,.moment,.head').forEach(el=>{el.classList.add('fade');io.observe(el)});
+</script>
+</body></html>
